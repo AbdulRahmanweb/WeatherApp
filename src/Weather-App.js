@@ -37,7 +37,7 @@ function WeatherApp() {
 		<br></br>
 		{weather && 
 		(<div id='name'>
-			<h1>Weather In: {weather.name}</h1>
+			<h1 id='weather-name'>{weather.name}</h1>
 			<div id='weather'>
 			<h1>{weather.main.temp.toPrecision(2)}°</h1>
 			<img src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}.png`} />
